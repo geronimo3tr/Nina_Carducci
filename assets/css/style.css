@@ -27,12 +27,21 @@ nav ul {
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 0;
-  gap: 10px;
 }
 
 nav a {
   text-decoration: none;
   color: #000;
+  padding: 10px;
+}
+
+nav li {
+  padding-inline: 0px;
+}
+
+nav a:hover {
+  background-color: #beb45a;
+  border-radius: 0.25rem;
 }
 
 .social-link img {
@@ -100,7 +109,6 @@ nav a {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #beb45a;
-  border-radius: 0;
 }
 .nav-pills .nav-link {
   color: #000;
