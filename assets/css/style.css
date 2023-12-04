@@ -35,15 +35,6 @@ nav a {
   padding: 10px;
 }
 
-nav li {
-  padding-inline: 0px;
-}
-
-nav a:hover {
-  background-color: #beb45a;
-  border-radius: 0.25rem;
-}
-
 .social-link img {
   width: 20px;
 }
