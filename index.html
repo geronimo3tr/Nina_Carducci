@@ -15,8 +15,6 @@
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"></script>
-    <script src="./assets/javascript/maugallery.js"></script>
-    <script src="./assets/javascript/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -99,55 +97,81 @@
     </section>
     <section id="gallery">
       <h3 class="title">Portfolio</h3>
-      <div class="container py-3">
-        <div class="gallery" style="display: none">
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
-            alt="aaron-paul" />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
-            alt="ali-morshedlou-WMD64tMfc4k-unsplash" />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
-            alt="jason-goodman-tHO1_OuKbg0-unsplash" />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
-            alt="hannah-busing-RvF2R_qMpRk-unsplash" />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
-            alt="ade-tunji-rVkhWWZFAtQ-unsplash" />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
-            alt="jakob-owens-SiniLJkXhMc-unsplash" />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.jpg"
-            alt="nino-van-prattenburg--443cl1uR_8-unsplash" />
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
-            alt="austin-neill-hgO1wFPXl3I-unsplash" />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
-            alt="mateus-campos-felipe-Fsgzm8N0hIY-unsplash" />
+      <article class="buttons nav">
+        <button class="active" type="button" data-btn="0">Tous</button>
+        <button type="button" data-btn="Concert">Concert</button>
+        <button type="button" data-btn="Entreprises">Entreprises</button>
+        <button type="button" data-btn="Mariages">Mariage</button>
+        <button type="button" data-btn="Portrait">Portrait</button>
+      </article>
+      <article class="container py-3">
+        <div class="row">
+          <div class="image-container">
+            <img
+              data-img="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+              alt="aaron-paul" />
+          </div>
+
+          <div class="image-container">
+            <img
+              data-img="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+              alt="ali-morshedlou-WMD64tMfc4k-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+              alt="jason-goodman-tHO1_OuKbg0-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+              alt="hannah-busing-RvF2R_qMpRk-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+              alt="ade-tunji-rVkhWWZFAtQ-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+              alt="jakob-owens-SiniLJkXhMc-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.jpg"
+              alt="nino-van-prattenburg--443cl1uR_8-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+              alt="austin-neill-hgO1wFPXl3I-unsplash" />
+          </div>
+          <div class="image-container">
+            <img
+              data-img="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+              alt="mateus-campos-felipe-Fsgzm8N0hIY-unsplash" />
+          </div>
         </div>
-      </div>
+      </article>
     </section>
     <section class="quote">
       <figure>
@@ -232,4 +256,6 @@
       </div>
     </section>
   </body>
+  <script src="./assets/javascript/maugallery.js"></script>
+  <script src="./assets/javascript/scripts.js"></script>
 </html>

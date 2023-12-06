@@ -89,47 +89,54 @@ nav a {
 #gallery {
   /*	min-height: 100vh; */
 }
-.title {
-  text-align: center;
-  padding-block: 2em;
-}
-.gallery .nav {
+
+.buttons {
+  /*display: flex;*/
   justify-content: center;
+  gap: 15px;
+  /*margin: 10px;*/
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
+
+.buttons button {
+  background: none;
+  border: none;
+}
+
+.buttons button.active {
   background-color: #beb45a;
+  color: white;
 }
-.nav-pills .nav-link {
-  color: #000;
+
+/*.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: auto;
+}*/
+
+.row {
+  --bs-gutter-y: 1.5rem;
 }
-.item-column {
-  position: relative;
-  margin-bottom: 0 !important;
-  padding: 0;
+
+.image-container {
+  max-height: 420px;
+  max-width: 400px;
 }
-.item-column::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
+
 .gallery-item {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 0.5em;
+  position: relative;
 }
-.mg-prev,
-.mg-next {
-  width: 30px;
-  height: 30px;
-  border-radius: 00%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 24px;
+
+.test {
+  background-color: purple;
+}
+
+.title {
+  text-align: center;
+  padding-block: 2em;
 }
 
 .quote {
@@ -273,6 +280,7 @@ input[type="submit"] {
     text-align: center;
     margin-top: 1em;
   }
+
   #services .container {
     flex-direction: column;
   }
@@ -312,20 +320,6 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-  .header {
-    flex-direction: column;
-    padding-inline: 0;
-  }
-  .header .nav,
-  .header .nav ul {
-    width: 100%;
-    padding: 0 0 0 0;
-  }
-  .header .nav li {
-    flex: 1;
-    padding-block: 1em;
-    text-align: center;
-  }
   .picture.left::before,
   .picture.right::before {
     height: 150px;
@@ -341,6 +335,7 @@ input[type="submit"] {
     padding-inline: 2em;
     padding-block: 2em;
   }
+
   form {
     width: 100%;
   }
