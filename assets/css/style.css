@@ -86,15 +86,9 @@ nav a {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
-
 .buttons {
-  /*display: flex;*/
   justify-content: center;
   gap: 15px;
-  /*margin: 10px;*/
 }
 
 .buttons button {
@@ -106,13 +100,6 @@ nav a {
   background-color: #beb45a;
   color: white;
 }
-
-/*.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  height: auto;
-}*/
 
 .row {
   --bs-gutter-y: 1.5rem;
