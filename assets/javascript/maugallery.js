@@ -3,14 +3,14 @@ const images = document.querySelectorAll(".image-container .gallery-item");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    FilterButton(button.getAttribute("data-btn"));
+    FilterButton(button.dataset.btn);
     ActiveButton(button);
   });
 });
 
 function FilterButton(category) {
   images.forEach((item) => {
-    const dataImg = item.getAttribute("data-img");
+    const dataImg = item.dataset.img;
     if (category === "0" || dataImg === category) {
       item.parentElement.style.display = "block";
     } else {
