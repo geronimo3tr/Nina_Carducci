@@ -311,6 +311,11 @@ input[type="submit"] {
   .picture.right::before {
     height: 150px;
   }
+
+  header {
+    flex-direction: column;
+  }
+
   #services .container {
     align-items: center;
   }
