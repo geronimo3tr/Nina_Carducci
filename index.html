@@ -7,7 +7,7 @@
     <meta http-equiv="Expires" content="31536000" />
     <meta name="description" content="Service de photographie pour Mariage, Concert, Entreprises, Portrait" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +16,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@100;500&display=swap"
       rel="stylesheet" />
     <meta charset="UTF-8" />
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <h3 class="name">Nina Carducci</h3>
-      <nav>
+      <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -32,9 +39,9 @@
             /></a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <section>
+    <section id="header">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -98,94 +105,68 @@
     </section>
     <section id="gallery">
       <title class="title">Portfolio</title>
-      <article class="buttons nav">
-        <button class="active" type="button" data-btn="0">Tous</button>
-        <button type="button" data-btn="Concert">Concert</button>
-        <button type="button" data-btn="Entreprises">Entreprises</button>
-        <button type="button" data-btn="Mariages">Mariage</button>
-        <button type="button" data-btn="Portrait">Portrait</button>
-      </article>
-      <article class="container py-3">
-        <div class="row">
-          <div class="image-container">
-            <img
-              data-img="Concert"
-              class="gallery-item"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
-              alt="aaron-paul" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
-              alt="ali-morshedlou-WMD64tMfc4k-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
-              alt="jason-goodman-tHO1_OuKbg0-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Mariages"
-              class="gallery-item"
-              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
-              alt="hannah-busing-RvF2R_qMpRk-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Concert"
-              class="gallery-item"
-              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
-              alt="ade-tunji-rVkhWWZFAtQ-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Mariages"
-              class="gallery-item"
-              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
-              alt="jakob-owens-SiniLJkXhMc-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Portrait"
-              class="gallery-item"
-              src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.jpg"
-              alt="nino-van-prattenburg--443cl1uR_8-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Concert"
-              class="gallery-item"
-              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
-              alt="austin-neill-hgO1wFPXl3I-unsplash" />
-          </div>
-          <div class="image-container">
-            <img
-              data-img="Entreprises"
-              class="gallery-item"
-              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
-              alt="mateus-campos-felipe-Fsgzm8N0hIY-unsplash" />
-          </div>
+      <div class="container py-3">
+        <div class="gallery" style="display: none">
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+            alt="aaron-paul" />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+            alt="ali-morshedlou-WMD64tMfc4k-unsplash" />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+            alt="jason-goodman-tHO1_OuKbg0-unsplash" />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+            alt="hannah-busing-RvF2R_qMpRk-unsplash" />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+            alt="ade-tunji-rVkhWWZFAtQ-unsplash" />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+            alt="jakob-owens-SiniLJkXhMc-unsplash" />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+            alt="nino-van-prattenburg--443cl1uR_8-unsplash" />
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+            alt="austin-neill-hgO1wFPXl3I-unsplash" />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+            alt="mateus-campos-felipe-Fsgzm8N0hIY-unsplash" />
         </div>
-      </article>
+      </div>
+      <div class="quote">
+        <figure>
+          <blockquote>
+            <h1 class="quote__text">
+              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait
+              pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+              vérité.
+            </h1>
+          </blockquote>
+          <figcaption class="quote__author">- Richard Avedon</figcaption>
+        </figure>
+      </div>
     </section>
-    <section class="quote">
-      <figure>
-        <blockquote>
-          <h1 class="quote__text">
-            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour
-            devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
-            vérité.
-          </h1>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </section>
-
     <section id="services">
       <title class="title">Mes services</title>
       <div class="container">
@@ -256,6 +237,4 @@
       </div>
     </section>
   </body>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="./assets/javascript/maugallery.js"></script>
 </html>
