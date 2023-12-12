@@ -273,6 +273,10 @@ input[type="submit"] {
     left: 0;
     z-index: -1;
   }
+
+  #about-me h3 {
+    width: 100%;
+  }
   .about-me__title {
     text-align: center;
     margin-top: 1em;
